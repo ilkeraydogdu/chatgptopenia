@@ -1,0 +1,167 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Ana Başlıklar */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #222;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Genel Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Butonlar */
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Formlar */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Ürün Listesi */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    color: #007BFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Sepet */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cart-item-price {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Admin Paneli */
+.admin-sidebar {
+    width: 20%;
+    float: left;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.admin-content {
+    width: 75%;
+    float: right;
+    padding: 20px;
+}
+
+.admin-sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-sidebar a:hover {
+    background-color: #555;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
